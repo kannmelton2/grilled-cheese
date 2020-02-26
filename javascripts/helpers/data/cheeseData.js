@@ -7,7 +7,7 @@ const cheeses = [
     },
     {
         type: 'american',
-        color: 'yellow',
+        color: 'green',
         price: .01,
         id: 'cheese2'
     },
