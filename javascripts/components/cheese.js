@@ -1,10 +1,12 @@
 import util from '../helpers/util.js';
 import cheeseData from '../helpers/data/cheeseData.js';
+import sandwich from './sandwich.js';
 
 const selectCheese = (e) => {
     const cheeseId = e.target.id;
     cheeseData.setSelectedCheeses(cheeseId);
     console.log(cheeseData.getSelectedCheeses());
+    sandwich.sandwichMaker();
 };
 
 const cheeseButtonEvent = () => {

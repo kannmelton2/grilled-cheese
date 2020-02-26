@@ -1,9 +1,11 @@
 import breadData from '../helpers/data/breadData.js';
 import util from '../helpers/util.js';
+import sandwich from './sandwich.js'
 
 const selectBread = (e) => {
     const breadId = e.target.id;
     breadData.setSelectedBread(breadId);
+    sandwich.sandwichMaker();
 };
 
 const radioButtonEvent = () => {

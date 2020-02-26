@@ -1,19 +1,19 @@
 const breads = [
     {
         type: 'White',
-        color: 'White',
+        color: 'white',
         price: 10,
         id: 'bread1'
     },
     {
         type: 'Wheat',
-        color: 'Brown',
+        color: 'burlywood',
         price: 10,
         id: 'bread2'
     },
     {
         type: 'Rye',
-        color: 'White',
+        color: 'darksalmon',
         price: 10,
         id: 'bread3'
     }
@@ -26,8 +26,13 @@ const setSelectedBread = (breadId) => {
     console.log('selectedBread', selectedBread);
   };
 
+const getSelectedBread = () => {
+    const findBread = breads.find((x) => x.id === selectedBread)
+    return findBread;
+  }
+
 const getBreads = () => {
     return breads;
 };
 
-export default { setSelectedBread, getBreads };
+export default { setSelectedBread, getBreads, getSelectedBread };
